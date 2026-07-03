@@ -5,7 +5,7 @@ frontend and **Node.js + Express + MongoDB** on the backend. Built as a portfoli
 demonstrate practical MERN-stack skills: JWT authentication, role-based access control, REST
 API design, file uploads, and OCR integration.
 
-## ✨ Core features
+## Core features
 
 | Module | What it does |
 |---|---|
@@ -20,7 +20,7 @@ API design, file uploads, and OCR integration.
 | **Weekly timetable** | Per-department, per-day class schedule with subject, timing, and faculty name |
 | **Events & holidays** | College-wide calendar, filterable by upcoming/past |
 
-## 🏗 Role hierarchy
+## Role hierarchy
 
 ```
 Super Admin
@@ -36,7 +36,7 @@ This is enforced twice: server-side via `middleware/auth.js` (`authorize`, `scop
 so the API itself can't be bypassed, and client-side via `ProtectedRoute` + the role-aware
 sidebar so users only ever see actions available to them.
 
-## 🗂 Project structure
+## Project structure
 
 ```
 student-management-system/
@@ -59,7 +59,7 @@ student-management-system/
     └── tailwind.config.js
 ```
 
-## 🚀 Getting started
+##  Getting started
 
 ### Prerequisites
 - Node.js 18+
@@ -95,7 +95,7 @@ npm run dev                 # starts the app on http://localhost:5173
 | Student | `CSE2024001` (admission no.) | `Student@123` |
 | Parent | `sunita.parent@college.edu` | `Parent@123` |
 
-## 🔌 Key API endpoints
+## Key API endpoints
 
 ```
 POST   /api/auth/login                 { identifier, password }
@@ -124,14 +124,14 @@ GET    /api/timetable?department=CSE
 POST   /api/events
 ```
 
-## 🛠 Tech stack
+## Tech stack
 
 - **Frontend:** React 18 (Vite), React Router, Tailwind CSS, Axios
 - **Backend:** Node.js, Express, MongoDB, Mongoose
 - **Auth:** JSON Web Tokens, bcrypt password hashing
 - **File handling:** Multer (uploads), Tesseract.js (OCR — no external API key needed)
 
-## 📌 Notes & next steps for extending this further
+## Notes & next steps for extending this further
 
 - The "Student IDs" fields in Attendance/Library/Hostel forms are intentionally simple text
   inputs for this minimal build — swap in a searchable student picker for production use.
